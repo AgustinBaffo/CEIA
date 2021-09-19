@@ -1,0 +1,63 @@
+Unidades de tiempo en dias
+El camino critico esta en naranja
+12hs 4dias de 3hs
+
+
+
+Planificacion (t=7):
+1.1. Desarrollo de plan de trabajo
+
+Investigación previa (t=20):
+2.1. Investigación sobre trabajos similares
+2.2. Investigación de técnicas para preprocesado de imágenes
+2.3. Investigación sobre modelos existentes y pre-entrenados
+
+Armado de datset (t=30):
+3.1. Búsqueda de datasets existentes
+3.2. Definición de buenas prácticas para la generación de datasets
+3.3. Recolección de datos con las cámaras
+3.4. Etiquetado de datos
+
+Investigación sobre técnicas de seguimiento (t=7):
+2.4. Investigación sobre tecnicas de seguimiento sobre imágenes
+
+Pipeline para preprocesado de imagenes (t=13):
+4.1. Dise˜no e implementación de pipeline para preprocesado de imágenes
+
+Pipeline para seguimiento de surcos (t=10):
+5.4. Dise˜no e implementación de pipeline para seguimiento de surcos
+
+Selección de modelo a preeliminar (t=28):
+5.1. Creación de diferentes prototipos de modelos
+5.2. Evaluación de desempe˜no de prototipos y selección de modelo a utilizar
+5.3. Perfeccionamiento del modelo utilizando dataset original
+
+Investigación y diseño de tests (t=7):
+6.1. Investigación y definición de criterios de evaluación del modelo
+6.2. Dise˜no de casos de prueba y tests a realizar
+
+Testeo y ajuste del modelo en simulación (t=25):
+6.3. Preparación de entorno de simulación
+6.4. Testeo de modelo en entorno de simulación
+5.5. Ajuste de modelo posterior a las pruebas en simulación
+
+Confección de informe de avance (t=3):
+7.2. Confección del informe de avance
+
+Testeo y ajuste del modelo en campo (t=20):
+6.5. Testeo de modelo en campo
+5.6. Ajuste de modelo posterior a las pruebas en campo
+
+Pruebas finales (t=5):
+6.6. Pruebas finales del modelo
+
+Documentación de código (t=5):
+5.7. Documentación del código
+
+Documentación de pruebas (t=3):
+6.7. Documentación de pruebas
+
+Documentación final (t=20):
+7.1. Confección de manual de uso de modelo
+7.3. Confección de la memoria del trabajo
+7.4. Preparación de la presentación final

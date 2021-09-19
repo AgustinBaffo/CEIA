@@ -1,0 +1,51 @@
+FUNCIONALES
+
+Debe poder clasificar personas como "obstáculo" con un error menor al 10%, en buenas condiciones de iluminación.
+Debe poder clasificar grandes malezas como "no obstáculo" con un error menor al 20%, en buenas condiciones de iluminación.
+Debe poder clasificar nubes de polvos como "no obstáculo" con un error menor al 10%, en buenas condiciones de iluminación.
+La salida del sistema debe ser una variable que informe si existe o no un obstáculo en el camino.
+Debe poder funcionar en tiempo real.
+
+
+DOCUMENTACION
+Los códigos desarrollados deben estar debidamente documentados.
+Confección de una memoria técnica.
+
+
+TESTING
+Se porbará la efectividad del sistema en terrenos agropecuarios y en distintas condiciones ambientales.
+
+FUNCIONALES OPCIONALES:
+Opcionalmente, el sistema podría detectar y reconocer pozos y zanjones.
+
+
+---
+
+
+
+
+
+
+el sistema debe proporcionar como salida una conclusion de stop o sigue
+tiene que poder ser compatible con los demas modulos del sistema (dividir en 2, entradas y salidas)
+
+
+Utilizar metodología ágil e iterativa en constante consulta con los interesados
+Utilizar un sistema de control de versiones con repositorios on line.
+Investigar y seleccionar metodología la mejor alternativa posiblepara el pocesamiento de imagenes con IA que garantice su continuudad en el tiempo.
+Armar dataset
+
+
+
+
+
+El formato propuesto es: "como [rol] quiero [tal cosa] para [tal otra cosa]."
+Se debe indicar explícitamente el criterio para calcular los \textit{story points} de cada historia
+--------------------
+
+Como usuario final quiero sentirme seguro de poder circular donde esta el vehiculo sin morir
+
+
+
+
+Que perminta reentrenarse para agregar mas clases

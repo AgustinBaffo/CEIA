@@ -1,0 +1,46 @@
+Gestion de proyecto:
+- Desarrollo de plan de trabajo (20hs)
+
+
+Investigacion previa:
+- Investigación sobre trabajos similares (20hs)
+- Investigación de técnicas para fusión de datos (20hs)
+- Investigacion de técnicas para preprocesado de datos (20hs)
+- Investigación sobre modelos existentes y pre entrenados que puedan ser utilizados (30hs)
+
+
+Generación de dataset:
+- Busqueda de datasets existentes para la aplicación (10hs)
+- Definición de buenas practicas para la generación de dataset (10hs)
+- Recolección de datos con los sensores (50hs)
+- Etiquetado de datos (30hs)
+
+
+Fusión de datos:
+- Diseño de pipeline para preprocesado de imágenes (30hs)
+- Diseño de pipeline para preprocesado de datos de LiDAR (30hs)
+
+
+Generación del modelo:
+
+- Creacion de diferentes prototipos de modelos (40hs)
+- Evaluacion de desempeño de prototipos y definición de arquitectura a utilizar (10hs)
+- Perfeccionamiento del modelo utilizando dataset original (40hs)
+- Ajuste de modelo posterior a las pruebas en simulación (30hs)
+- Ajuste de modelo posterior a las pruebas en campo (30hs)
+- Documentacion de codigo (10hs)
+
+Testeo y evaluación:
+- Investigar y definir criterios de evaluación del modelo (10hs)
+- Diseño de casos de prueba y tests a realizar (10hs)
+- Testeo de modelo en entorno de simulación (20hs)
+- Testeo de modelo en campo (40hs)
+- Pruebas finales del modelo (15hs)
+- Documentacion de pruebas (15hs)
+
+Documentos finales:
+- Confección de manual de uso de modelo (15hs)
+- Confección del informe de avance (10hs)
+- Confección de la memoria del trabajo (40hs)
+- Preparación de la presentación final (20hs)
+

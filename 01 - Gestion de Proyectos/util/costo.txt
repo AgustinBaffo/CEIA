@@ -1,0 +1,16 @@
+Costo directo:
+detalle 		costo unitario			cantidad		
+- mano de obra 		1100				610
+- Camaras			10k					1
+- Notebook			300k				1
+- Licencia Simulador	200000			1
+
+
+
+Costo indirecto:
+- Internet				3000/mes		10
+- Servicio de electricidad		3000/mes	10
+- Transporte (para pruebas en sitio)	30000	1
+- Gastos de oficina			20000	1
+
+

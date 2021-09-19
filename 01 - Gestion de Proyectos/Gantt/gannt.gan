@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Gantt Project" company="FIUBA" webLink="http://" view-date="2021-08-01" view-index="2" gantt-divider-location="1" resource-divider-location="300" version="3.1.3102" locale="es_ES">
+    <description/>
+    <view zooming-state="default:8" id="gantt-chart">
+        <field id="tpd3" name="Nombre" width="15" order="0"/>
+        <field id="tpd4" name="Fecha de inicio" width="15" order="1"/>
+        <field id="tpd5" name="Fecha de fin" width="15" order="2"/>
+        <option id="taskLabelUp" value=""/>
+        <option id="taskLabelLeft" value="name"/>
+        <option id="color.recent">
+            <![CDATA[#ff9999]]>
+        </option>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Nombre" width="208" order="0"/>
+        <field id="1" name="Función" width="85" order="1"/>
+    </view>
+    <!-- -->
+    <calendars base-id="Argentina Holidays 2020">
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+        <date year="" month="1" date="1" type="HOLIDAY">
+            <![CDATA[New Year's Day]]>
+        </date>
+        <date year="" month="3" date="24" type="HOLIDAY">
+            <![CDATA[Truth and Justice Memorial Day]]>
+        </date>
+        <date year="" month="4" date="2" type="HOLIDAY">
+            <![CDATA[Malvinas Day]]>
+        </date>
+        <date year="" month="5" date="1" type="HOLIDAY">
+            <![CDATA[Labour Day]]>
+        </date>
+        <date year="" month="5" date="25" type="HOLIDAY">
+            <![CDATA[May Day Revolution]]>
+        </date>
+        <date year="" month="7" date="9" type="HOLIDAY">
+            <![CDATA[Independence Day]]>
+        </date>
+        <date year="" month="12" date="8" type="HOLIDAY">
+            <![CDATA[Immaculate Conception Day]]>
+        </date>
+        <date year="" month="12" date="25" type="HOLIDAY">
+            <![CDATA[Christmas Day]]>
+        </date>
+        <date year="2020" month="2" date="24" type="HOLIDAY">
+            <![CDATA[Carnival Monday]]>
+        </date>
+        <date year="2020" month="2" date="25" type="HOLIDAY">
+            <![CDATA[Carnival Tuesday]]>
+        </date>
+        <date year="2020" month="3" date="23" type="HOLIDAY">
+            <![CDATA[Truth and Justice Memorial Bridge Holiday]]>
+        </date>
+        <date year="2020" month="4" date="10" type="HOLIDAY">
+            <![CDATA[Good Friday]]>
+        </date>
+        <date year="2020" month="6" date="15" type="HOLIDAY">
+            <![CDATA[Martin Miguel de Guemes Day]]>
+        </date>
+        <date year="2020" month="6" date="20" type="HOLIDAY">
+            <![CDATA[National Flag Day]]>
+        </date>
+        <date year="2020" month="7" date="10" type="HOLIDAY">
+            <![CDATA[Independence Day Bridge Holiday]]>
+        </date>
+        <date year="2020" month="8" date="17" type="HOLIDAY">
+            <![CDATA[San Martin's Day]]>
+        </date>
+        <date year="2020" month="10" date="12" type="HOLIDAY">
+            <![CDATA[Day of respect for cultural diversity]]>
+        </date>
+        <date year="2020" month="11" date="23" type="HOLIDAY">
+            <![CDATA[National Sovereignty Day]]>
+        </date>
+        <date year="2020" month="12" date="7" type="HOLIDAY">
+            <![CDATA[Immaculate Conception Bridge Holiday]]>
+        </date>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="0" name="1.1 Desarrollo de plan de trabajo" color="#8cb6ce" meeting="false" start="2021-08-02" duration="7" complete="0" thirdDate="2021-07-13" thirdDate-constraint="0" expand="true">
+            <depend id="2" type="2" difference="0" hardness="Rubber"/>
+            <depend id="30" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="30" name="Planificación" color="#ff9999" meeting="true" start="2021-08-11" duration="0" complete="0" thirdDate="2021-07-01" thirdDate-constraint="0" expand="true"/>
+        <task id="2" name="2.1 Investigación sobre trabajos similares" color="#8cb6ce" meeting="false" start="2021-09-06" duration="7" complete="0" thirdDate="2021-08-25" thirdDate-constraint="0" expand="true">
+            <depend id="3" type="2" difference="0" hardness="Strong"/>
+            <depend id="4" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="3" name="2.2 Investigación de técnicas para preprocesado de imágenes" color="#8cb6ce" meeting="false" start="2021-09-15" duration="7" complete="0" thirdDate="2021-08-27" thirdDate-constraint="0" expand="true">
+            <depend id="10" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="4" name="2.3 Investigación sobre modelos existentes y pre-entrenados" color="#8cb6ce" meeting="false" start="2021-09-15" duration="7" complete="0" thirdDate="2021-08-27" thirdDate-constraint="0" expand="true">
+            <depend id="5" type="2" difference="0" hardness="Strong"/>
+            <depend id="6" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="5" name="2.4 Investigación sobre tecnicas de seguimiento sobre imágenes" color="#8cb6ce" meeting="false" start="2021-09-24" duration="7" complete="0" thirdDate="2021-08-31" thirdDate-constraint="0" expand="true">
+            <depend id="14" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="6" name="3.1 Búsqueda de datasets existentes" color="#8cb6ce" meeting="false" start="2021-09-24" duration="3" complete="0" thirdDate="2021-09-21" thirdDate-constraint="0" expand="true">
+            <depend id="7" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="7" name="3.2 Definición de buenas prácticas para la generación de datasets" color="#8cb6ce" meeting="false" start="2021-09-29" duration="3" complete="0" thirdDate="2021-09-01" thirdDate-constraint="0" expand="true">
+            <depend id="8" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="8" name="3.3 Recolección de datos con las cámaras" color="#8cb6ce" meeting="false" start="2021-10-04" duration="13" complete="0" thirdDate="2021-09-29" thirdDate-constraint="0" expand="true">
+            <depend id="9" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="9" name="3.4 Etiquetado de datos" color="#8cb6ce" meeting="false" start="2021-10-21" duration="10" complete="0" thirdDate="2021-10-18" thirdDate-constraint="0" expand="true">
+            <depend id="10" type="2" difference="0" hardness="Strong"/>
+            <depend id="11" type="2" difference="0" hardness="Strong"/>
+            <depend id="18" type="2" difference="0" hardness="Strong"/>
+            <depend id="35" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="35" name="Dataset" color="#ff9999" meeting="true" start="2021-11-04" duration="0" complete="0" thirdDate="2021-06-01" thirdDate-constraint="0" expand="true"/>
+        <task id="10" name="4.1 Diseño e implementación de pipeline para preprocesado de imágenes" color="#8cb6ce" meeting="false" start="2021-11-04" duration="13" complete="0" thirdDate="2021-07-22" thirdDate-constraint="0" expand="true">
+            <depend id="12" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="11" name="5.1 Creación de diferentes prototipos de modelos" color="#8cb6ce" meeting="false" start="2021-11-04" duration="10" complete="0" thirdDate="2021-07-16" thirdDate-constraint="0" expand="true">
+            <depend id="12" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="18" name="6.1 Investigación y definición de criterios de evaluación del modelo" color="#8cb6ce" meeting="false" start="2021-11-04" duration="3" complete="0" thirdDate="2021-07-13" thirdDate-constraint="0" expand="true">
+            <depend id="19" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="19" name="6.2 Diseño de casos de prueba y tests a realizar" color="#8cb6ce" meeting="false" start="2021-11-09" duration="3" complete="0" thirdDate="2021-11-04" thirdDate-constraint="0" expand="true">
+            <depend id="12" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="12" name="5.2 Evaluación de desempeño de prototipos y selección de modelo a utilizar" color="#8cb6ce" meeting="false" start="2021-11-23" duration="5" complete="0" thirdDate="2021-07-13" thirdDate-constraint="0" expand="true">
+            <depend id="13" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="13" name="5.3 Perfeccionamiento del modelo utilizando dataset original" color="#8cb6ce" meeting="false" start="2021-11-30" duration="13" complete="0" thirdDate="2021-11-25" thirdDate-constraint="0" expand="true">
+            <depend id="14" type="2" difference="0" hardness="Strong"/>
+            <depend id="49" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="49" name="Diseño de modelo" color="#ff9999" meeting="true" start="2021-12-20" duration="0" complete="0" thirdDate="2021-08-02" thirdDate-constraint="0" expand="true"/>
+        <task id="14" name="5.4 Diseño e implementación de pipeline para seguimiento de surcos" color="#8cb6ce" meeting="false" start="2021-12-20" duration="10" complete="0" thirdDate="2021-10-07" thirdDate-constraint="0" expand="true">
+            <depend id="20" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="20" name="6.3 Preparación de entorno de simulación" color="#8cb6ce" meeting="false" start="2022-01-03" duration="7" complete="0" thirdDate="2021-12-29" thirdDate-constraint="0" expand="true">
+            <depend id="21" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="21" name="6.4 Testeo de modelo en entorno de simulación" color="#8cb6ce" meeting="false" start="2022-01-12" duration="8" complete="0" thirdDate="2022-01-07" thirdDate-constraint="0" expand="true">
+            <depend id="15" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="15" name="5.5 Ajuste de modelo posterior a las pruebas en simulación" color="#8cb6ce" meeting="false" start="2022-01-24" duration="10" complete="0" thirdDate="2022-01-19" thirdDate-constraint="0" expand="true">
+            <depend id="22" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="22" name="6.5 Testeo de modelo en campo" color="#8cb6ce" meeting="false" start="2022-02-07" duration="10" complete="0" thirdDate="2022-02-02" thirdDate-constraint="0" expand="true">
+            <depend id="16" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="16" name="5.6 Ajuste de modelo posterior a las pruebas en campo" color="#8cb6ce" meeting="false" start="2022-02-21" duration="10" complete="0" thirdDate="2022-02-16" thirdDate-constraint="0" expand="true">
+            <depend id="17" type="2" difference="0" hardness="Strong"/>
+            <depend id="23" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="23" name="6.6 Pruebas finales del modelo" color="#8cb6ce" meeting="false" start="2022-03-07" duration="5" complete="0" thirdDate="2022-03-02" thirdDate-constraint="0" expand="true">
+            <depend id="24" type="2" difference="0" hardness="Strong"/>
+            <depend id="41" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="17" name="5.7 Documentación del código" color="#8cb6ce" meeting="false" start="2022-03-07" duration="5" complete="0" thirdDate="2022-03-02" thirdDate-constraint="0" expand="true">
+            <depend id="25" type="2" difference="0" hardness="Strong"/>
+            <depend id="26" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="41" name="Testeo" color="#ff9999" shape="1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0" meeting="true" start="2022-03-14" duration="0" complete="0" thirdDate="2022-03-09" thirdDate-constraint="0" expand="true"/>
+        <task id="24" name="6.7 Documentación de pruebas" color="#8cb6ce" meeting="false" start="2022-03-14" duration="3" complete="0" thirdDate="2022-03-09" thirdDate-constraint="0" expand="true">
+            <depend id="25" type="2" difference="0" hardness="Strong"/>
+            <depend id="26" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="25" name="7.1 Confección de manual de uso de modelo" color="#8cb6ce" meeting="false" start="2022-03-17" duration="5" complete="0" thirdDate="2022-03-14" thirdDate-constraint="0" expand="true"/>
+        <task id="26" name="7.2 Confección del informe de avance" color="#8cb6ce" meeting="false" start="2022-03-17" duration="3" complete="0" thirdDate="2022-03-14" thirdDate-constraint="0" expand="true">
+            <depend id="27" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="27" name="7.3 Confección de la memoria del trabajo" color="#8cb6ce" meeting="false" start="2022-03-22" duration="10" complete="0" thirdDate="2022-03-17" thirdDate-constraint="0" expand="true">
+            <depend id="28" type="2" difference="0" hardness="Strong"/>
+            <depend id="45" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="45" name="Documentación finalizada" color="#ff9999" meeting="true" start="2022-04-06" duration="0" complete="0" thirdDate="2021-09-01" thirdDate-constraint="0" expand="true">
+            <depend id="28" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="28" name="7.4 Preparación de la presentación final" color="#8cb6ce" meeting="false" start="2022-04-06" duration="5" complete="0" thirdDate="2021-07-13" thirdDate-constraint="0" expand="true">
+            <depend id="86" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="86" name="Presentación de proyecto" color="#ff9999" meeting="true" start="2022-04-13" duration="0" complete="0" thirdDate="2021-12-01" thirdDate-constraint="0" expand="true">
+            <depend id="50" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="50" name="Proyecto Finalizado" color="#ff9999" meeting="true" start="2022-04-13" duration="0" complete="0" thirdDate="2021-06-01" thirdDate-constraint="0" expand="true"/>
+    </tasks>
+    <resources>
+        <resource id="0" name="Agustin Baffo" function="SoftwareDevelopment:2" contacts="" phone=""/>
+    </resources>
+    <allocations>
+        <allocation task-id="0" resource-id="0" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="30" resource-id="0" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+    </allocations>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+    <roles roleset-name="SoftwareDevelopment"/>
+</project>

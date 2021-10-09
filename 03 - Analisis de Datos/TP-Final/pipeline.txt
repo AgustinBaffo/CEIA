@@ -1,0 +1,44 @@
+# DropCols
+
+	- 'Evaporation','Sunshine','Cloud9am','Cloud3pm','Date'
+	
+# Variable Encoding
+	- Binary:
+	y_train.replace({"No":0,"Yes":1},inplace=True)
+	X_train.replace({"No":0,"Yes":1},inplace=True)
+	
+	- Wind Direction: (only ordinal)
+	X_train.replace(windDirDic,inplace=True)
+	
+	- Location:
+		- add LocationType
+		- add location cluster
+	
+# Feature Selection / New Features
+	- create PressureMean, TempMean, TempMaxDiff ..
+	- drop temp, press.. 9am/3pm
+	 
+# Outliers
+	- transform_outliers norm_col
+	- transform_outliers norm_rainfall
+
+# Scaled
+	- scaled_columns
+	
+# Imputation
+	- SimpleImputer: imputed_by_mean_col
+	- KNN: imputed_by_knn_col
+	
+# Cyclic encoding for wind speed
+	X_train[wd+'_cos'] = np.cos(2 * np.pi * (X_train[wd]/16))
+    X_train[wd+'_sin'] = np.sin(2 * np.pi * (X_train[wd]/16))
+
+# Normalization
+	- yeo-johnson: norm_col_yj
+	- QuantileTransformer: norm_col_qt
+
+# Drop columns:
+	- LocationType
+	- ordinal WindDir
+	
+# PCA

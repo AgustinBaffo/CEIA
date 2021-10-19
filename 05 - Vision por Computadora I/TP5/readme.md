@@ -1,3 +1,3 @@
 Output:
 
-![Alt Text](output.gif)
+![output](./results/output.gif)

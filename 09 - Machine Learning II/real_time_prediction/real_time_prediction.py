@@ -8,7 +8,7 @@ import pickle
 import os
 import time
 
-backet_dir = "backet/"
+bucket_dir = "bucket/"
 local_dir = "local/"
 model_path = "./ariline_passanger_satisfaction_model_ann.pickle"
 preprocess_dict_path = "./preprocess.pickle"
@@ -75,15 +75,15 @@ def make_predictions(files_name,model):
       return y_pred
 
 while True:
-    if os.listdir(backet_dir) : # Check if a Directory is empty
+    if os.listdir(bucket_dir) : # Check if a Directory is empty
 
-        filenames = next(os.walk(backet_dir), (None, None, []))[2]  # [] if no file
+        filenames = next(os.walk(bucket_dir), (None, None, []))[2]  # [] if no file
         filenames_csv = [x for x in filenames if x.endswith('.csv')]
 
         if len(filenames_csv)>0:
             for file_name in filenames_csv:
-                os.system("cp "+backet_dir+file_name+" "+local_dir)
-                os.system("rm "+backet_dir+file_name)
+                os.system("cp "+bucket_dir+file_name+" "+local_dir)
+                os.system("rm "+bucket_dir+file_name)
 
             model = pickle.load(open(model_path,"rb"))
             make_predictions(filenames_csv,model)

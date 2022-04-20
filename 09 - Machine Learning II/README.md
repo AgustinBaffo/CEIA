@@ -1,6 +1,6 @@
 Este repositorio contiene dos trabajos de MLOps en [Google Cloud Platform](https://console.cloud.google.com/) (GCP).
 
-## Predicciones en tiempo real (VM+Bucket)
+## 1. Predicciones en tiempo real (VM+Bucket)
 
 En la carpeta [1_gcp_real_time_prediction](./1_gcp_real_time_prediction) se encuentran los archivos necesarios para ralizar las predicciones de un modelo en tiempo real, en Cloud. Para esto, se debe instanciar una Maquina Virtual y un Bucket en GCP. En el directorio raiz del Bucket, se depositan los nuevos datos a predecir de manera asincrónica y en la carpeta `output` se obtienen las predicciones. La VM ejecuta un script de Python que hace polling sobre el Bucket y al encontrar nuevos archivos de datos (de extensión csv), registra los nombres en el archivo de texto `new_data_filenames.txt`. Luego dichos datos son cargados y procesados tambien en la VM, quien escribe los resultados en al carpeta output.
 
@@ -15,3 +15,15 @@ Los archivos son los siguientes:
 - [preprocess.pickle](./1_gcp_real_time_prediction/preprocess.pickle): archivo binario con los transformeners necesarios de sklearn para el preprocesado de datos.
 
 Nota: el modelo ariline_passanger_satisfaction_model_rf.pickle no fue subido al repositorio porque excede el tamaño permitido.
+
+
+## 2. Versionado de modelos con Databricks
+
+En la carpeta [2_databricks](./2_databricks) se encuentran los notebooks de un trabajo realizado con [Databricks](https://databricks.com/). Con fines didácticos, se propuso realizar el proceso completo desde análisis y preprocesamiento de datos, hasta el entrenamiento y puesta en producción de un modelo.
+
+Los notbooks son los siguientes:
+- [1-analysis_and_preprocessing.ipynb](./2_databricks/1-analysis_and_preprocessing.ipynb]: Analisis y preprocesado de datos.
+- [2-train_rf.ipynb](./2_databricks/2-train_rf.ipynb]: Entrenamiento de un modelo Random Forest (sklearn)
+- [3-train_ann.ipynb](./2_databricks/3-train_ann.ipynb]: Entrenamiento de una red nueronal (TensorFlow/Keras)
+- [4-predictions.ipynb](./2_databricks/4-predictions.ipynb]: Predicciones con ambos modelos. Además se registran los modelos para su puesta en producción.
+- [5-model_in_production.ipynb](./2_databricks/5-model_in_production.ipynb]: Predicciones de modelos en tiempo real, tanto con modelo en **producción** como en **stage**.

@@ -58,9 +58,9 @@ En el cuaderno [4-predictions.ipynb](./2_databricks/4-predictions.ipynb) se test
 El cuaderno [5-model_in_production.ipynb](./2_databricks/5-model_in_production.ipynb) es similar al anterior pero los modelos se tratan de manera genérica como `Producción` y `Stage`. Notese que estos modelos pueden ser intercambiadios fácilmente desde la interfaz gráfica de MLFlow, moviendo uno o el otro a Producción o Stage, según se deseara (ver figuras del punto anterior). Finalmente, utilizando las herramientas de [JOBS](https://docs.databricks.com/data-engineering/jobs/index.html) de Databricks se crean tareas cíclicas que ejecutan este cuaderno cada 1 minuto, realizando predicciones en tiempo real.
 
 <p align="center" float="left" justify-content="center">
-    <img src="./outputs/dbricks_05_jobs.png.png" alt="dbricks_jobs" class="center"/>
+    <img src="./outputs/dbricks_05_jobs.png" alt="dbricks_jobs" class="center"/>
 </p>
 
 <p align="center" float="left" justify-content="center">
-    <img src="./outputs/dbricks_06_job_list.png.png" alt="dbricks_job_list" class="center"/>
+    <img src="./outputs/dbricks_06_job_list.png" alt="dbricks_job_list" class="center"/>
 </p>

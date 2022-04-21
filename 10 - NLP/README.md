@@ -1,1 +1,6 @@
-#TODO
+- [desafio1-word2vec.ipynb](./desafio1-word2vec.ipynb):
+- [desafio2-bot_dnn_spacy_esp.ipynb](./desafio2-bot_dnn_spacy_esp.ipynb):
+- [desafio3-embedding_Gensim.ipynb](./desafio3-embedding_Gensim.ipynb):
+- [desafio4-text_prediction.ipynb](./desafio4-text_prediction.ipynb):
+- [desafio5-clothing_ecommerce_reviews.ipynb](./desafio5-clothing_ecommerce_reviews.ipynb):
+- [desafio6-bot_qa.ipynb](./desafio6-bot_qa.ipynb):

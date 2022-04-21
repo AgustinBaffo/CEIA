@@ -5,6 +5,12 @@ Este repositorio contiene dos trabajos de MLOps en [Google Cloud Platform](https
 En la carpeta [1_gcp_real_time_prediction](./1_gcp_real_time_prediction) se encuentran los archivos necesarios para ralizar las predicciones de un modelo en tiempo real, en Cloud. Para esto, se debe instanciar una Maquina Virtual y un Bucket en GCP. En el directorio raiz del Bucket, se depositan los nuevos datos a predecir de manera asincrónica y en la carpeta `output` se obtienen las predicciones. La VM ejecuta un script de Python que hace polling sobre el Bucket y al encontrar nuevos archivos de datos (de extensión csv), registra los nombres en el archivo de texto `new_data_filenames.txt`. Luego dichos datos son cargados y procesados también en la VM, quien escribe los resultados en al carpeta output.
 
 <p align="center" float="left" justify-content="center">
+    <img src="./outputs/gcp_00_arch.png" alt="gcp_arch" class="center"/>
+</p>
+
+Tanto el análisis y preprocesado de datos como el entrenamiento de los modelos fue realizado en este [Notebook de Google Colab](https://drive.google.com/file/d/1FkrAteGgGobZG2uPTdYYbVZLy0kSKoGX/view?usp=sharing). Luego, los modelos y demás archivos necesarios fueron subidos a la VM de GCP, para realizar predicciones en Cloud.
+
+<p align="center" float="left" justify-content="center">
     <img src="./outputs/gcp_output.gif" alt="real_time_prediction" class="center" width="820"/>
 </p>
 

@@ -32,7 +32,7 @@ El objetivo de este trabajo es utilizar documentos para crear embeddings de pala
 #### [desafio5-clothing_ecommerce_reviews.ipynb](./desafio5-clothing_ecommerce_reviews.ipynb)
 <a href="https://colab.research.google.com/drive/11eYzehM2idq30AvpFnDji3KVjYTAZWey?usp=sharing"><img src="https://colab.research.google.com/assets/colab-badge.svg" height=22.5></a>
 
-El objetivo de este trabajo es utilizar un dataset de críticas de compradores de ropa (eCommerce), para entreanr un modelo que sea capaz de determinar la evaluación del comprador (cuantas estrellas le asigna al producto) a través de su crítica. El dataset puede ser descargado en este [link](https://www.kaggle.com/datasets/nicapotato/womens-ecommerce-clothing-reviews). En la arquitectura del modelo, se utilizaron Embeddings y celdas de tipo LSTM.
+El objetivo de este trabajo es utilizar un dataset de críticas de compradores de ropa (eCommerce), para entrenar un modelo que sea capaz de determinar la evaluación del comprador (cuantas estrellas le asigna al producto) a través de su crítica. El dataset puede ser descargado en este [link](https://www.kaggle.com/datasets/nicapotato/womens-ecommerce-clothing-reviews). En la arquitectura del modelo, se utilizaron Embeddings y celdas de tipo LSTM.
 
 ## Desafío 6: Q&A Chatbot (Embeddings + LSTM)
 #### [desafio6-bot_qa.ipynb](./desafio6-bot_qa.ipynb)
@@ -41,5 +41,5 @@ El objetivo de este trabajo es utilizar un dataset de críticas de compradores d
 En este trabajo se entrena un mini Q&A chatbot para responder preguntas de usuario en ingles. Para esto se utilizan datos disponibles de [Covai](https://convai.io/).
 El dataset puede ser descargado en este [link](http://convai.io/data/). El modelo propuesto tiene una arquitectura tipo encoder-decoder utilizando Embeddings y celdas tipo LSTM. Para el entrenamiento, la arquitectura propuesta fue la siguiente:
 
-Dado que en la inferencia se necesita en primer lugar que el encoder reciba toda la secuencia de entrada para generar el estado interno, se tiene que utilizar por separado el encoder y el decoder. Esto se muestra en las siguientes imagenes:
+Dado que en la inferencia se necesita en primer lugar que el encoder reciba toda la secuencia de entrada para generar el estado interno, se tiene que utilizar por separado el encoder y el decoder. Es decir, se debe desacoplar el modelo. Las arquitecturas utilizadas para inferencia fueron las siguientes:
 

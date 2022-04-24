@@ -41,5 +41,16 @@ El objetivo de este trabajo es utilizar un dataset de críticas de compradores d
 En este trabajo se entrena un mini Q&A chatbot para responder preguntas de usuario en ingles. Para esto se utilizan datos disponibles de [Covai](https://convai.io/).
 El dataset puede ser descargado en este [link](http://convai.io/data/). El modelo propuesto tiene una arquitectura tipo encoder-decoder utilizando Embeddings y celdas tipo LSTM. Para el entrenamiento, la arquitectura propuesta fue la siguiente:
 
+<p align="center" float="left" justify-content="center">
+    <img src="./images/model_enc-dec.png" alt="model_enc-dec" class="center" width="480"/>
+</p>
+
 Dado que en la inferencia se necesita en primer lugar que el encoder reciba toda la secuencia de entrada para generar el estado interno, se tiene que utilizar por separado el encoder y el decoder. Es decir, se debe desacoplar el modelo. Las arquitecturas utilizadas para inferencia fueron las siguientes:
 
+<p align="center" float="left" justify-content="center">
+    <img src="./images/inf_encoder.png" alt="inf_encoder" class="center" width="480"/>
+</p>
+
+<p align="center" float="left" justify-content="center">
+    <img src="./images/inf_decoder.png" alt="inf_decoder" class="center" width="480"/>
+</p>

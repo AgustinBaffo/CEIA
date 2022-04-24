@@ -14,22 +14,27 @@ El objetivo de este trabajo fue tener un primer acercamiento con algunos concept
 #### [desafio2-bot_dnn_spacy_esp.ipynb](./desafio2-bot_dnn_spacy_esp.ipynb)
 <a href="https://colab.research.google.com/drive/1v7OwH4Fdnz1ajUgEZyid0AL2NFEqQkuf?usp=sharing"><img src="https://colab.research.google.com/assets/colab-badge.svg" height=22.5></a>
 
+
 ## Desafío 3: Embedding con Gesim
 #### [desafio3-embedding_Gensim.ipynb](./desafio3-embedding_Gensim.ipynb)
 <a href="https://colab.research.google.com/drive/1N8gW7jPi9aldviAtlKgLqLU70eSdKMjK?usp=sharing"><img src="https://colab.research.google.com/assets/colab-badge.svg" height=22.5></a>
 
-En este trabajo se generan embeddings de palabras basados un contexto específico, utilizando [Gensim](https://radimrehurek.com/gensim/). Como dataset, se utilizaron los libros de Harry Potter. Este dataset puede ser descargado a través de este [link](https://github.com/formcept/whiteboard/tree/master/nbviewer/notebooks/data/harrypotter)).
+En este trabajo se generan embeddings de palabras basados un contexto específico, utilizando [Gensim](https://radimrehurek.com/gensim/). Como dataset, se utilizaron los libros de Harry Potter. Este dataset puede ser descargado a través de este [link](https://github.com/formcept/whiteboard/tree/master/nbviewer/notebooks/data/harrypotter).
 
 ## Desafío 4: Text Prediction
 #### [desafio4-text_prediction.ipynb](./desafio4-text_prediction.ipynb)
 <a href="https://colab.research.google.com/drive/1UZNSHtkd3H_PDCrFbYWlr8NLBa5eLjRr?usp=sharing"><img src="https://colab.research.google.com/assets/colab-badge.svg" height=22.5></a>
 
-El objetivo de este trabajo es utilizar documentos para crear embeddings de palabras utilizando la layer Embedding de Keras. Luego, se utilizan estos embeddings junto con layers LSTM para predeccir la próxima palabra de un texto ingresado como input. Se utilizó como dataset un conjunto de canciones de Ed Sheeran, que puede ser descargado a través de este [link](https://github.com/r1fad/edSheeran/tree/master/JSONs)).
+El objetivo de este trabajo es utilizar documentos para crear embeddings de palabras utilizando la layer Embedding de Keras. Luego, se utilizan estos embeddings junto con layers LSTM para predeccir la próxima palabra de un texto ingresado como input. Se utilizó como dataset un conjunto de canciones de Ed Sheeran, que puede ser descargado a través de este [link](https://github.com/r1fad/edSheeran/tree/master/JSONs).
 
-## Desafío 5: Reviews analysis
+## Desafío 5: Sentiment analysis (Embeddings + LSTM)
 #### [desafio5-clothing_ecommerce_reviews.ipynb](./desafio5-clothing_ecommerce_reviews.ipynb)
 <a href="https://colab.research.google.com/drive/11eYzehM2idq30AvpFnDji3KVjYTAZWey?usp=sharing"><img src="https://colab.research.google.com/assets/colab-badge.svg" height=22.5></a>
+El objetivo de este trabajo es utilizar un dataset de críticas de compradores de ropa (eCommerce), para entreanr un modelo que sea capaz de determinar la evaluación del comprador (cuantas estrellas le asigna al producto) a través de su crítica. El dataset puede ser descargado en este [link](https://www.kaggle.com/datasets/nicapotato/womens-ecommerce-clothing-reviews). En la arquitectura del modelo, se utilizaron Embeddings y celdas de tipo LSTM.
 
 ## Desafío 6: Chat bot
 #### [desafio6-bot_qa.ipynb](./desafio6-bot_qa.ipynb)
 <a href="https://colab.research.google.com/drive/1xqrxCWw0TikMjh6DFdiqAm-_jC491nlP?usp=sharing"><img src="https://colab.research.google.com/assets/colab-badge.svg" height=22.5></a>
+En este trabajo se entrena un mini Q&A chatbot para responder preguntas de usuario en ingles. Para esto se utilizan datos disponibles de [Covai](https://convai.io/).
+El dataset puede ser descargado en este [link](http://convai.io/data/). Se contruye una arquitectura tipo encoder-decoder utilizando Embeddings y celdas tipo LSTM.
+

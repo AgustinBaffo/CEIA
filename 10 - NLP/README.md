@@ -10,10 +10,11 @@ A continuación se detalla el contenido de estos trabajos:
 
 El objetivo de este trabajo fue tener un primer acercamiento con algunos conceptos y herramientas de NLP. Se realizan vectorizaciones de documentos como OneHotEncoding o Vectores de fecuencia (TF-IDF). Luego, utilizando estos vectores, se calcula la similitud de docoumentos la a través de la [similitud coseno](https://es.wikipedia.org/wiki/Similitud_coseno).
 
-## Desafío 2: Q&A Chatbot (DNN + Spacy)
+## Desafío 2: Q&A Chatbot (DNN + spaCy)
 #### [desafio2-bot_dnn_spacy_esp.ipynb](./desafio2-bot_dnn_spacy_esp.ipynb)
 <a href="https://colab.research.google.com/drive/1v7OwH4Fdnz1ajUgEZyid0AL2NFEqQkuf?usp=sharing"><img src="https://colab.research.google.com/assets/colab-badge.svg" height=22.5></a>
-En este trabajo se utilizaron redes neuronales densas (DNN) y la librería [spaCy](https://spacy.io/universe/project/spacy-stanza) para generar un Q&A Chatbot con respuestas predeterminadas. El ejercicio se plantea como un problema de clasificación multiclase en donde se toma un texto como entrada, y el modelo de DNN lo clasifica dentro de una categoría (ej. bienvenida, problemas, saludos, datos de contacto, etc.). Luego el bot devuelve una respuesta pre-programada dependiendo de la categoría seleccionada. Para el entrenamiento se utilizó un pequeño dataset que se encuentra incluido dentro del notebook (en la sección "3 - Diccionario de entrada"), y que emula la etención al cliente de un sistema para reservar turnos.
+
+En este trabajo se utilizaron redes neuronales densas (DNN) y la librería [spaCy](https://spacy.io/universe/project/spacy-stanza) para generar un Q&A Chatbot con respuestas predeterminadas. El ejercicio se plantea como un problema de clasificación multiclase en donde se toma un texto como entrada, y el modelo de DNN lo clasifica dentro de una categoría (ej. bienvenida, problemas, saludos, datos de contacto, etc.). Luego el bot devuelve una respuesta pre-programada dependiendo de la categoría seleccionada. Para el entrenamiento se utilizó un pequeño dataset que se encuentra incluido dentro del notebook (en la sección "3 - Diccionario de entrada") y que emula la etención al cliente de un sistema para reservar turnos.
 
 ## Desafío 3: Embedding con Gesim
 #### [desafio3-embedding_Gensim.ipynb](./desafio3-embedding_Gensim.ipynb)

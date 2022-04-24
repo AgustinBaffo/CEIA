@@ -42,7 +42,7 @@ En este trabajo se entrena un mini Q&A chatbot para responder preguntas de usuar
 El dataset puede ser descargado en este [link](http://convai.io/data/). El modelo propuesto tiene una arquitectura tipo encoder-decoder utilizando Embeddings y celdas tipo LSTM. Para el entrenamiento, la arquitectura propuesta fue la siguiente:
 
 <p align="center" float="left" justify-content="center">
-    <img src="./images/model_enc-dec.png" alt="model_enc-dec" class="center" width="480"/>
+    <img src="./images/model_enc-dec.png" alt="model_enc-dec" class="center" width="820"/>
 </p>
 
 Dado que en la inferencia se necesita en primer lugar que el encoder reciba toda la secuencia de entrada para generar el estado interno, se tiene que utilizar por separado el encoder y el decoder. Es decir, se debe desacoplar el modelo. Las arquitecturas utilizadas para inferencia fueron las siguientes:
@@ -52,5 +52,5 @@ Dado que en la inferencia se necesita en primer lugar que el encoder reciba toda
 </p>
 
 <p align="center" float="left" justify-content="center">
-    <img src="./images/inf_decoder.png" alt="inf_decoder" class="center" width="480"/>
+    <img src="./images/inf_decoder.png" alt="inf_decoder" class="center" width="820"/>
 </p>
